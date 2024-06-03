@@ -162,25 +162,25 @@ function showResult(){
         //creating a new span tag and passing the user score number and total question number
         let scoreTag = `<span>and congrats! 🎉, You got <p> ${userScore} </p> out of <p> ${ questions.length} </p></span>`;
         scoreTag += `<span style="display: table; margin: 0 auto;"> You are placed at level 4 </span>`;
-        scoreTag += `<br> <a href= "https://sslacademy.msaaq.net/courses/%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D9%89-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9-%D9%85%D8%AA%D9%88%D8%B3%D8%B7-%D8%A3%D9%88-%D9%85%D8%AA%D9%88%D8%B3%D8%B7-%D9%85%D8%A8%D8%AA%D8%AF%D8%A6" target="_blank"> Click here To Acess The Course</a> `;
+        scoreTag += `<br> <a href= "https://sslacd.com/courses/level_4" target="_blank"> Click here To Acess The Course</a> `;
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
     else if(userScore > 20){ // if user scored more than 1
         let scoreTag = `<span>and nice 😎, You got <p> ${userScore} </p> out of <p> ${ questions.length} </p></span>`;
         scoreTag += `<span style="display: table; margin: 0 auto;"> You are placed at level 3 </span>`;
-        scoreTag += `<br> <a href= "https://sslacademy.msaaq.net/courses/%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D9%89-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%85%D8%A8%D8%AA%D8%AF%D8%A6-%D9%85%D8%B1%D8%AA%D9%81%D8%B9" target="_blank"> Click here To Acess The Course</a> `;
+        scoreTag += `<br> <a href= "https://sslacd.com/courses/level_3" target="_blank"> Click here To Acess The Course</a> `;
         scoreText.innerHTML = scoreTag;
     }
     else if(userScore > 10){ // if user scored more than 1
         let scoreTag = `<span>and nice 😎, You got <p> ${userScore} </p> out of <p> ${ questions.length} </p></span>`;
         scoreTag += `<span style="display: table; margin: 0 auto;"> You are placed at level 2 </span>`;
-        scoreTag += `<br> <a href= "https://sslacademy.msaaq.net/courses/%D8%A7%D9%84%D8%AF%D8%B1%D9%88%D8%B3-%D8%A7%D9%84%D9%85%D9%83%D8%AB%D9%81%D8%A9-%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3-%D9%88%D9%85%D8%A8%D8%AA%D8%AF%D8%A6-%D9%88%D9%85%D8%AA%D9%88%D8%B3%D8%B7-%D8%A3%D8%B1%D8%A8%D8%B9-%D8%A3%D8%B4%D9%87%D8%B1" target="_blank"> Click here To Acess The Course</a> `;
+        scoreTag += `<br> <a href= "https://sslacd.com/courses/level_2" target="_blank"> Click here To Acess The Course</a> `;
         scoreText.innerHTML = scoreTag;
     }
     else{ // if user scored less than 1
         let scoreTag = `<span>and nice 😎, You got <p> ${userScore} </p> out of <p> ${ questions.length} </p></span>`;
         scoreTag += `<span style="display: table; margin: 0 auto;"> You are placed at level 1 </span>`;
-        scoreTag += `<br> <a href= "https://sslacademy.msaaq.net/courses/%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3%D9%8A%D8%A9" target="_blank"> Click here To Acess The Course</a> `;
+        scoreTag += `<br> <a href= "https://sslacd.com/courses/level_1" target="_blank"> Click here To Acess The Course</a> `;
         scoreText.innerHTML = scoreTag;
     }
 
