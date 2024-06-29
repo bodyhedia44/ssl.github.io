@@ -76,7 +76,8 @@ const bottom_ques_counter = document.querySelector("footer .total_que");
 
 // if Next Que button clicked
 next_btn.onclick = ()=>{
-    if(que_count < questions.length - 1){ //if question count is less than total question length
+    if(que_count < 2){ //if question count is less than total question length
+        // if(que_count < questions.length - 1){ //if question count is less than total question length
         que_count++; //increment the que_count value
         que_numb++; //increment the que_numb value
         showQuetions(que_count); //calling showQestions function
@@ -161,26 +162,33 @@ function showResult(){
     if (userScore > 30){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
         let scoreTag = `<span>and congrats! 🎉, You got <p> ${userScore} </p> out of <p> ${ questions.length} </p></span>`;
-        scoreTag += `<span style="display: table; margin: 0 auto;"> You are placed at level 4 </span>`;
-        scoreTag += `<br> <a href= "https://sslacd.com/courses/level_4" target="_blank"> Click here To Acess The Course</a> `;
+        scoreTag += `<span style="display: table; margin: 0 auto;"> تم تصنيفك في المستوى الرابع </span>`;
+        scoreTag += `<br> <a href= "https://sslacd.com/courses/level_4" target="_blank"> اضغط هنا للتسجيل في الدورة التي تم تصنيفك فيها</a> `;
+        scoreTag += `<br> <img width="350" height="250" src= "https://sslacd.com/_next/image?url=https%3A%2F%2Fcdn.msaaq.com%2Fcourses%2F212168%2Fwhatsapp-image-2024-06-01-at-7-48-59-pm-3.jpeg&w=1920&q=75">`;
+
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
     else if(userScore > 20){ // if user scored more than 1
         let scoreTag = `<span>and nice 😎, You got <p> ${userScore} </p> out of <p> ${ questions.length} </p></span>`;
-        scoreTag += `<span style="display: table; margin: 0 auto;"> You are placed at level 3 </span>`;
-        scoreTag += `<br> <a href= "https://sslacd.com/courses/level_3" target="_blank"> Click here To Acess The Course</a> `;
+        scoreTag += `<span style="display: table; margin: 0 auto;"> تم تصنيفك في المستوى الثالث </span>`;
+        scoreTag += `<br> <a href= "https://sslacd.com/courses/level_3" target="_blank"> اضغط هنا للتسجيل في الدورة التي تم تصنيفك فيها</a> `;
+        scoreTag += `<br> <img width="350" height="250" src= "https://sslacd.com/_next/image?url=https%3A%2F%2Fcdn.msaaq.com%2Fcourses%2F212169%2Fwhatsapp-image-2024-06-01-at-7-48-59-pm-2.jpeg&w=1920&q=75">`;
+        
         scoreText.innerHTML = scoreTag;
     }
     else if(userScore > 10){ // if user scored more than 1
         let scoreTag = `<span>and nice 😎, You got <p> ${userScore} </p> out of <p> ${ questions.length} </p></span>`;
-        scoreTag += `<span style="display: table; margin: 0 auto;"> You are placed at level 2 </span>`;
-        scoreTag += `<br> <a href= "https://sslacd.com/courses/level_2" target="_blank"> Click here To Acess The Course</a> `;
+        scoreTag += `<span style="display: table; margin: 0 auto;"> تم تصنيفك في المستوى الثاني </span>`;
+        scoreTag += `<br> <a href= "https://sslacd.com/courses/level_2" target="_blank"> اضغط هنا للتسجيل في الدورة التي تم تصنيفك فيها</a> `;
+        scoreTag += `<br> <img width="350" height="250" src= "https://sslacd.com/_next/image?url=https%3A%2F%2Fcdn.msaaq.com%2Fcourses%2F212170%2Fwhatsapp-image-2024-06-01-at-7-48-59-pm-1.jpeg&w=750&q=75">`;
+        
         scoreText.innerHTML = scoreTag;
     }
     else{ // if user scored less than 1
         let scoreTag = `<span>and nice 😎, You got <p> ${userScore} </p> out of <p> ${ questions.length} </p></span>`;
-        scoreTag += `<span style="display: table; margin: 0 auto;"> You are placed at level 1 </span>`;
-        scoreTag += `<br> <a href= "https://sslacd.com/courses/level_1" target="_blank"> Click here To Acess The Course</a> `;
+        scoreTag += `<span style="display: table; margin: 0 auto;"> تم تصنيفك في المستوى الاول </span>`;
+        scoreTag += `<br> <a href= "https://sslacd.com/courses/level_1" target="_blank"> اضغط هنا للتسجيل في الدورة التي تم تصنيفك فيها</a> `;
+        scoreTag += `<br> <img width="350" height="250" src= "https://sslacd.com/_next/image?url=https%3A%2F%2Fcdn.msaaq.com%2Fcourses%2F212165%2Fwhatsapp-image-2024-06-01-at-7-48-59-pm.jpeg&w=750&q=75">`;
         scoreText.innerHTML = scoreTag;
     }
 
